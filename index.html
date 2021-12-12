@@ -1,84 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./style.css">
-        <title>Sip Coffee Company</title>
-    </head>
-    <body>
-      <!-- NavBar -->
-			<nav class="navbar">
-        <div class="navbar-container">
-          <div class="navbar-brand">
-            <a href="index.html">
-              <img src="./img/logo.png" alt="Company Logo">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Sip Coffee Company</title>
+  </head>
+  <body>
+    <!-- NavBar -->
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="navbar-brand">
+          <a href="index.html">
+            <img src="./img/logo.png" alt="Company Logo" />
+          </a>
+        </div>
+
+        <ul class="navbar-nav-left">
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Rewards</a></li>
+          <li><a href="#">Gift Cards</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+
+        <ul class="navbar-nav-right">
+          <li>
+            <a href="#">
+              <i class="fas fa-map-marker-alt fa-lg"></i>
+              <span>Find a store</span>
             </a>
-          </div>
+          </li>
+          <li><button class="btn btn-dark-outline">Sign In</button></li>
+          <li><button class="btn btn-dark">Join Now</button></li>
+        </ul>
 
-          <ul class="navbar-nav-left">
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Rewards</a></li>
-            <li><a href="#">Gift Cards</a></li>
-            <li><a href="#">About Us</a></li>
-          </ul>
-          
-          <ul class="navbar-nav-right">
-            <li>
-              <a href="#">
-                <i class="fas fa-map-marker-alt fa-lg"></i>
-                <span>Find a store</span>
-              </a>
-            </li>
-            <li><button class="btn btn-dark-outline">Sign In</button></li>
-            <li><button class="btn btn-dark">Join Now</button></li>
-          </ul>
+        <!-- Hamburger Menu -->
+        <button type="button" class="hamburger" id="menu-btn">
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu hidden" id="menu">
+      <ul>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Rewards</a></li>
+        <li><a href="#">Gift Cards</a></li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+
+      <div class="mobile-menu-bottom">
+        <button class="btn btn-dark-outline">Sign In</button>
+        <button class="btn btn-dark">Join Now</button>
+        <div class="locator-icons">
+          <a href="#">
+            <i class="fas fa-map-marker-alt fa-lg"></i>
+            <span>Find a store</span>
+          </a>
         </div>
-      </nav>
+      </div>
+    </div>
 
-      <!-- Box 1 -->
-      <section class="box box-1 bg-primary text-center py-md">
-        <div class="box-inner">
-          <h2 class="text-xl">Holidays are here, try something new today!</h2>
-          <p class="text-md">Browse our exclusive online menu for delicius deals. <a href="#">Learn More</a></p>
-        </div>
-      </section>
 
-      <!-- Box 2 -->
-      <section class="box box-2 bg-secondary grid-col-2">
-        <img src="./img/box-2.png" alt="">
-        <div class="box-text">
-          <h2 class="text xl">New For This Season Only</h2>
-          <p class="text-md">For a twist on the classical latte, try the new Iced Cookie Almond Twirl before it's gone</p>
-          <a href="#" class="btn btn-light-outline">Order Now</a>
-        </div>
-      </section>
+    <!-- Box 1 -->
+    <section class="box box-1 bg-primary text-center py-md">
+      <div class="box-inner">
+        <h2 class="text-xl">Holidays are here, try something new today!</h2>
+        <p class="text-md">
+          Browse our exclusive online menu for delicius deals.
+          <a href="#">Learn More</a>
+        </p>
+      </div>
+    </section>
 
-      <!-- Box 3 -->
-      <section class="box box-3 bg-secondary grid-col-2 grid-reversed">
-        <img src="./img/box-3.jpg" alt="">
-        <div class="box-text">
-          <h2 class="text xl">100% Fresh Made Coffee Daily</h2>
-          <p class="text-md">Our baristas are expertly trained to make your order to perfection, every time - no exceptions</p>
-          <a href="#" class="btn btn-light-outline">Order Now</a>
-        </div>
-      </section>
+    <!-- Box 2 -->
+    <section class="box box-2 bg-secondary grid-col-2">
+      <div class="img-container">
+        <img src="./img/box-2.png" alt="" />
+      </div>
+      <div class="box-text">
+        <h2 class="text xl">New For This Season Only</h2>
+        <p class="text-md">
+          For a twist on the classical latte, try the new Iced Cookie Almond
+          Twirl before it's gone
+        </p>
+        <a href="#" class="btn btn-light-outline">Order Now</a>
+      </div>
+    </section>
 
-      <!-- Box 4 -->
-      <section class="box box-4 bg-primary grid-col-2 grid-ervered">
-        <img src="./img/box-4.png" alt="">
-        <div class="box-text">
-          <h2 class="text xl">Your Favorite Blend On the Go</h2>
-          <p class="text-md">Pre-order your favorite blend of coffee so that you can take Starbucks on the go, wherever you are</p>
-          <a href="#" class="btn btn-light-outline">Order Now</a>
-        </div>
-      </section>
+    <!-- Box 3 -->
+    <section class="box box-3 bg-secondary grid-col-2 grid-reversed">
+      <div class="img-container">
+        <img class="jpg-img" src="./img/box-3.jpg" alt="" />
+      </div>
 
-			<script src="script.js"></script>
-    </body>
+      <div class="box-text">
+        <h2 class="text xl">100% Fresh Made Coffee Daily</h2>
+        <p class="text-md">
+          Our baristas are expertly trained to make your order to perfection,
+          every time - no exceptions
+        </p>
+        <a href="#" class="btn btn-light-outline">Order Now</a>
+      </div>
+    </section>
+
+    <!-- Box 4 -->
+    <section class="box box-4 bg-primary grid-col-2 grid-ervered">
+      <div class="img-container">
+        <img src="./img/box-4.png" alt="" />
+      </div>
+      <div class="box-text">
+        <h2 class="text xl">Your Favorite Blend On the Go</h2>
+        <p class="text-md">
+          Pre-order your favorite blend of coffee so that you can take Starbucks
+          on the go, wherever you are
+        </p>
+        <a href="#" class="btn btn-light-outline">Order Now</a>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <div class="footer">
+      <div class="footer-container"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
