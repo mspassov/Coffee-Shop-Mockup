@@ -22,7 +22,11 @@ a {
 }
 
 a:hover {
-  color: var(--color-primary);
+  color: var(--color-secondary);
+}
+
+section a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 ul {
@@ -144,6 +148,18 @@ p {
   }
 }
 
+section .box-inner a {
+  color: white;
+  text-decoration: underline;
+}
+
+section .box-inner a:hover {
+  color: white;
+  text-decoration: underline;
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+}
+
 /* Navbar */
 .navbar {
   width: 100%;
@@ -193,10 +209,39 @@ p {
 
 /* Box Classes */
 .box {
-  margin-bottom: 30px;
+  margin: 30px auto;
 }
 
 .box-inner {
   max-width: 850px;
   margin: 0 auto;
+}
+
+.box-text {
+  max-width: 500px;
+  text-align: center;
+  justify-self: center;
+  padding: 20px 0;
+}
+
+.box-text .btn {
+  margin-top: 25px;
+}
+
+/* Grid Styles */
+.grid-col-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.grid-reversed :first-child {
+  order: 2;
+}
+
+section img {
+  max-width: 750px;
+  height: auto;
 }
